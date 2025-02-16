@@ -1,3 +1,95 @@
+
+
+Sudoku-puzzle 
+
+Introduction
+
+This project is a C-based Sudoku solver that utilizes a backtracking algorithm to find solutions for a given Sudoku puzzle. The program takes an incomplete 9x9 Sudoku grid as input and attempts to fill in the missing numbers while following Sudoku rules.
+Example Output
+
+Original puzzle:
+3 |   | 9 | 1 |   | 7 |   | 8 | 4 
+  | 1 |   |   |   |   | 2 |   |   
+7 |   |   | 2 |   | 8 |   |   | 1 
+---------------------------------
+  | 6 |   |   | 8 |   |   | 4 |   
+  |   | 2 |   |   |   | 1 |   |   
+  | 3 |   |   | 1 |   |   | 5 |   
+---------------------------------
+5 |   |   | 8 |   | 6 |   |   | 9 
+  |   | 1 |   |   |   | 3 | 7 |   
+  | 7 |   | 6 |   | 5 | 8 |   |   
+
+Solved puzzle:
+3 | 5 | 8 | 2 | 1 | 6 | 9 | 7 | 4 
+4 | 1 | 6 | 9 | 7 | 5 | 2 | 3 | 8 
+7 | 2 | 9 | 4 | 3 | 8 | 5 | 6 | 1 
+---------------------------------
+1 | 6 | 5 | 7 | 8 | 9 | 4 | 2 | 3 
+8 | 9 | 2 | 5 | 4 | 3 | 1 | 6 | 7 
+2 | 3 | 7 | 6 | 1 | 4 | 8 | 5 | 9 
+---------------------------------
+5 | 4 | 3 | 8 | 2 | 6 | 7 | 1 | 9 
+6 | 8 | 1 | 3 | 9 | 7 | 3 | 7 | 5 
+9 | 7 | 4 | 6 | 5 | 2 | 8 | 9 | 2
+
+
+
+
+Features
+
+Solves any valid 9x9 Sudoku puzzle.
+
+Implements a backtracking algorithm for efficient solving.
+
+Displays both the original and solved puzzle in a structured format.
+
+
+Getting Started
+
+Prerequisites
+
+To compile and run this program, you need:
+
+A C compiler (GCC recommended)
+
+A code editor or terminal
+
+Git (optional, for version control)
+
+
+Installation
+
+1. Clone the repository:
+2. https://github.com/Anamika-pamdey-ui/sudoku-puzzle
+
+
+
+
+How It Works
+
+1. The program reads a 9x9 Sudoku grid, where empty cells are represented by 0.
+
+
+2. It attempts to fill in the empty cells using a recursive backtracking algorithm.
+
+
+3. The function valid_move() checks if a number can be placed in a given position without violating Sudoku rules.
+
+
+4. The solve_puzzle() function attempts numbers from 1 to 9 and proceeds recursively.
+
+
+5. If a solution is found, it is displayed in a structured format.
+
+
+FAQS 
+For further information, question, answer you can contact me here e-mail anamika.p10902080@gmail.com
+
+
+
+
+
 //sudoko puzzle using c
 #include <stdio.h>
 
